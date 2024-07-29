@@ -1,6 +1,6 @@
 # HelloCurve Front-End Engineer Home Assignment
 
-Welcome to the HelloCurve front-end engineer home assignment! This project is a starting point for building a user interface using Next.js 13+ and Material-UI.
+This project is a starting point for building a user interface using Next.js 13+ and Material-UI.
 
 ## About HelloCurve
 
