@@ -1,6 +1,6 @@
 # HelloCurve Front-End Engineer Home Assignment
 
-This project is a starting point for building a user interface using Next.js 13+ and Material-UI.
+Welcome to the HelloCurve front-end engineer home assignment! This project is a starting point for building a user interface using Next.js 13+ and Material-UI.
 
 ## About HelloCurve
 
@@ -33,7 +33,6 @@ Your task is to create a user interface for a customer communication platform us
 #### Assignment tasks:
 - [ ] 1. Implement sidebar with navigation
 - [ ] 2. Create customer conversation list
-- [ ] 3. Develop main chat area
 - [ ] 4. Design customer details panel
 - [ ] 5. Use provided dummy data
 - [ ] 6. Ensure appealing UI/UX
@@ -43,7 +42,7 @@ Your task is to create a user interface for a customer communication platform us
 - [ ] Next.js 13+ with TypeScript
 - [ ] Material-UI components
 - [ ] Proper component structure
-- [ ] Effective use of React hooks
+- [ ] Effective use of React and SSR
 - [ ] Clean, commented code
 
 #### Submission:
@@ -55,17 +54,16 @@ Your task is to create a user interface for a customer communication platform us
 - Code quality and organization
 - UI/UX implementation
 - React and Next.js usage
-- Material-UI utilization
 - Attention to detail
 
-### Optional Tweaks (Bonus Points)
+### Optional (Bonus Points)
 
 If you'd like to showcase more of your skills, consider implementing some of these optional features:
 
+- [ ] [Implement the chat messages UI](https://github.com/curve-communications/nextjs-assignment/blob/main/ui-screens/chat-box.png)
 - [ ] Implement a dark mode toggle
-- [ ] Add animations for smooth transitions between conversations
 - [ ] Create a responsive design that works well on mobile devices
-- [ ] Implement a search functionality for conversations or messages
+
 
 ### UI Examples
 
@@ -73,9 +71,6 @@ Below are the UI examples for the assignment. Your implementation should aim to 
 
 #### Main Interface
 ![alt text](https://github.com/curve-communications/nextjs-assignment/blob/main/ui-screens/Inbox.png)
-
-#### Chat Interface
-![alt text](https://github.com/curve-communications/nextjs-assignment/blob/main/ui-screens/chat-box.png)
 
 ### Custom Icons
 
@@ -91,10 +86,6 @@ You can find the dummy data for this project in `src/data/dummyData.json`. Use t
 2. Reply to the email that sent you this assignment
 3. Include the link to your GitHub repository in your reply
 4. Add any additional notes or comments about your implementation (optional)
-
-## Timeline
-
-You have one week from receiving this assignment to submit your solution. If you need more time, please let us know in advance.
 
 ## Evaluation Criteria
 
