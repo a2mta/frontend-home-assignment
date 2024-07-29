@@ -1,0 +1,171 @@
+{
+  "currentUser": {
+    "id": "user-001",
+    "name": "Molly Vaughan",
+    "avatar": "/avatars/molly-vaughan.png"
+  },
+  "contacts": [
+    {
+      "id": "contact-001",
+      "name": "Olivia Rhye",
+      "avatar": "/avatars/olivia-rhye.png",
+      "phone": "(808) 676-7382",
+      "email": "olivia.rhye@example.com",
+      "company": "Acme Corp",
+      "location": "San Francisco, CA",
+      "status": "Active",
+      "source": "Website",
+      "access": "Anyone at Curve"
+    },
+    {
+      "id": "contact-002",
+      "name": "Jordan Burgess",
+      "avatar": "/avatars/jordan-burgess.png",
+      "phone": "(603) 555-0123",
+      "email": "jordan.burgess@example.com"
+    },
+    {
+      "id": "contact-003",
+      "name": "Courtney Turner",
+      "avatar": "/avatars/courtney-turner.png",
+      "phone": "(415) 555-0132",
+      "email": "courtney.turner@example.com"
+    },
+    {
+      "id": "contact-004",
+      "name": "Frank Whitaker",
+      "avatar": "/avatars/frank-whitaker.png",
+      "phone": "(212) 555-0191",
+      "email": "frank.whitaker@example.com"
+    },
+    {
+      "id": "contact-005",
+      "name": "Adem Lane",
+      "avatar": "/avatars/adem-lane.png",
+      "phone": "(650) 555-0172",
+      "email": "adem.lane@example.com"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv-001",
+      "contactId": "contact-001",
+      "messages": [
+        {
+          "id": "msg-001",
+          "senderId": "user-001",
+          "content": "Hey Olivia 👋 Molly here, I will be taking over for my colleague Orlando and will be assisting you today instead.",
+          "timestamp": "2023-07-27T16:25:00Z"
+        },
+        {
+          "id": "msg-002",
+          "senderId": "user-001",
+          "content": "I can give you a call in 2 minutes. Does that work for you?",
+          "timestamp": "2023-07-27T16:26:00Z"
+        },
+        {
+          "id": "msg-003",
+          "senderId": "contact-001",
+          "content": "Yeah, sure. Thanks!",
+          "timestamp": "2023-07-27T16:27:00Z"
+        },
+        {
+          "id": "msg-004",
+          "senderId": "system",
+          "content": "Call ended",
+          "timestamp": "2023-07-27T16:33:21Z",
+          "metadata": {
+            "duration": "6:21",
+            "participants": 2
+          }
+        },
+        {
+          "id": "msg-005",
+          "senderId": "contact-001",
+          "content": "Thank you for your help Molly. Can I also move all of my available seats to the new subscription plan?",
+          "timestamp": "2023-07-28T14:20:00Z"
+        },
+        {
+          "id": "msg-006",
+          "senderId": "contact-001",
+          "content": "Sorry, I forgot to ask this during our call",
+          "timestamp": "2023-07-28T14:21:00Z"
+        }
+      ],
+      "callRecording": {
+        "duration": "6:02"
+      },
+      "aiSummary": "Molly and Olivia discussed upgrading the subscription plan. Molly proposed contacting the provider for more details on upgrade options and data issues. She's busy today but available Friday to explore this further."
+    },
+    {
+      "id": "conv-002",
+      "contactId": "contact-002",
+      "messages": [
+        {
+          "id": "msg-007",
+          "senderId": "system",
+          "content": "Missed call",
+          "timestamp": "2023-07-27T16:28:00Z"
+        }
+      ]
+    },
+    {
+      "id": "conv-003",
+      "contactId": "contact-003",
+      "messages": [
+        {
+          "id": "msg-008",
+          "senderId": "contact-003",
+          "content": "Is there a way to upgrade my plan from the basic to the premium tier?",
+          "timestamp": "2023-07-27T16:28:00Z"
+        }
+      ]
+    },
+    {
+      "id": "conv-004",
+      "contactId": "contact-004",
+      "messages": [
+        {
+          "id": "msg-009",
+          "senderId": "contact-004",
+          "content": "Thank you for your assistance with my recent inquiry.",
+          "timestamp": "2023-07-27T16:28:00Z"
+        }
+      ]
+    },
+    {
+      "id": "conv-005",
+      "contactId": "contact-005",
+      "messages": [
+        {
+          "id": "msg-010",
+          "senderId": "system",
+          "content": "Missed call",
+          "timestamp": "2023-07-27T16:28:00Z"
+        }
+      ]
+    }
+  ],
+  "team": [
+    {
+      "id": "user-001",
+      "name": "Molly Vaughan",
+      "avatar": "/avatars/molly-vaughan.png"
+    },
+    {
+      "id": "user-002",
+      "name": "Cameron Yang",
+      "avatar": "/avatars/cameron-yang.png"
+    },
+    {
+      "id": "user-003",
+      "name": "Noel Baldwin",
+      "avatar": "/avatars/noel-baldwin.png"
+    },
+    {
+      "id": "user-004",
+      "name": "Riley Moore",
+      "avatar": "/avatars/riley-moore.png"
+    }
+  ]
+}
