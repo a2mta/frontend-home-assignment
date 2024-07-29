@@ -33,10 +33,10 @@ Your task is to create a user interface for a customer communication platform us
 #### Assignment tasks:
 - [ ] 1. Implement sidebar with navigation
 - [ ] 2. Create customer conversation list
-- [ ] 4. Design customer details panel
-- [ ] 5. Use provided dummy data
-- [ ] 6. Ensure appealing UI/UX
-- [ ] 7. Implement basic interactivity
+- [ ] 3. Design customer details panel
+- [ ] 4. Use provided dummy data
+- [ ] 5. Ensure appealing UI/UX
+- [ ] 6. Implement basic interactivity
 
 #### Technical requirements:
 - [ ] Next.js 13+ with TypeScript
