@@ -1,0 +1,22 @@
+import React from 'react';
+import InboxPanel from '../InboxPanel';
+import { Stack, Typography } from '@mui/material';
+import CustomIcon from '../CustomIcon';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
+const ConversationList = () => {
+  const HeaderComp = (
+    <Stack direction='row' justifyContent='space-between' color='grey' flex='1'>
+      <Stack direction='row'>
+        <CustomIcon icon='hash' />
+        <Typography color='black' sx={{ marginLeft: '6px' }} variant='subtitle2'>
+          All converstaions
+        </Typography>
+      </Stack>
+      <KeyboardArrowDownIcon sx={{ cursor: 'pointer' }} fontSize='small' />
+    </Stack>
+  );
+  return <InboxPanel header={HeaderComp} />;
+};
+
+export default ConversationList;
