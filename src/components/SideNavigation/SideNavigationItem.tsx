@@ -36,8 +36,11 @@ const SideNavigationItem: FC<SideNavigationItemProps> = ({
         alignItems='center'
         {...rest}
       >
-        <CustomIcon stroke={isActive ? 'black' : 'graphite'} icon={icon} />
-        <Typography color={isActive ? 'black' : 'graphite'} variant='body2'>
+        <CustomIcon icon={icon} />
+        <Typography
+          color={isActive ? 'black' : 'graphite'}
+          variant={isActive ? 'subtitle2' : 'body2'}
+        >
           {title}
         </Typography>
       </Stack>

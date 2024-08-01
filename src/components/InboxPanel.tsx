@@ -10,6 +10,7 @@ const InboxPanel: FC<InboxPanelProps> = ({ header, children }) => {
   return (
     <Paper
       sx={{
+        height: '100%',
         display: 'flex',
         alignItems: 'center',
         borderRadius: '7px',
@@ -27,7 +28,7 @@ const InboxPanel: FC<InboxPanelProps> = ({ header, children }) => {
           {header}
         </Box>
       )}
-      {children && <Box sx={{padding: '0px 4px'}} width='100%'>{children}</Box>}
+      {children && <Box sx={{padding: '0px 4px 4px 4px'}} width='100%'>{children}</Box>}
     </Paper>
   );
 };

@@ -104,7 +104,7 @@
         {
           "id": "msg-007",
           "senderId": "system",
-          "content": "Missed call",
+          "content": "Call ended",
           "timestamp": "2023-07-27T16:28:00Z"
         }
       ]

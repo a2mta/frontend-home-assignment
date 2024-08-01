@@ -1,3 +1,7 @@
+export type GetParams = {
+  userId?: string;
+};
+
 export type User = {
   id: string;
   name: string;

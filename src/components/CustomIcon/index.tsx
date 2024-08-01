@@ -5,15 +5,11 @@ import { IconList, icons } from './iconsList';
 
 type CustomIconProps = {
   icon: IconList;
-} & SvgIconProps;
+};
 
-
-
-const CustomIcon: FC<CustomIconProps> = ({ icon, ...rest }) => {
+const CustomIcon: FC<CustomIconProps> = ({ icon }) => {
   const IconComponent = icons[icon];
-  return (
-      <IconComponent {...rest} />
-  );
+  return <IconComponent />;
 };
 
 export default CustomIcon;
