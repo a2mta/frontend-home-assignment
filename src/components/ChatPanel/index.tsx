@@ -7,20 +7,13 @@ import CustomIcon from '../CustomIcon';
 import Check from '@mui/icons-material/Check';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
 import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
-import { contacts, conversations } from '@/data/dummyData.json';
+import { contacts } from '@/data/dummyData.json';
 
 const ChatPanel = () => {
   const searchParams = useSearchParams();
   const userId = searchParams.get('userId');
   const user = useMemo(
     () => (userId ? contacts.find(({ id }) => id === userId) : undefined),
-    [userId]
-  );
-  const chatHistory = useMemo(
-    () =>
-      userId
-        ? conversations.find(({ contactId }) => contactId.includes(userId))
-        : undefined,
     [userId]
   );
   if (!userId) return null;
@@ -31,15 +24,11 @@ const ChatPanel = () => {
         <Box>
           <CustomIcon icon='hash' />
         </Box>
-        <Typography
-          color='black'
-          sx={{ marginLeft: '6px' }}
-          variant='subtitle2'
-        >
+        <Typography color='black' marginLeft='6px' variant='subtitle2'>
           Primary
         </Typography>
       </Stack>
-      <Stack spacing='4px' direction='row' sx={{ alignItems: 'center' }}>
+      <Stack spacing='4px' direction='row' alignItems='center'>
         <Typography variant='subtitle2' color='black'>
           {user?.name}
         </Typography>
@@ -58,7 +47,7 @@ const ChatPanel = () => {
   return (
     <Suspense>
       <InboxPanel fullHeight header={HeaderComp}>
-        <Stack sx={{ height: '100%' }} flex="1" spacing='2px' marginTop='5px'>
+        <Stack sx={{ height: '100%' }} flex='1' spacing='2px' marginTop='5px'>
           {userId}
         </Stack>
       </InboxPanel>

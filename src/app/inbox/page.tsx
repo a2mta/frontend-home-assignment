@@ -9,7 +9,6 @@ import FilesPanel from '@/components/FilesPanel';
 import MessageBox from '@/components/MessageBox';
 
 const InboxPage = () => {
-
   return (
     <Box
       sx={{

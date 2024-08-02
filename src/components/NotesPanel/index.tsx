@@ -1,6 +1,6 @@
 'use client'
 import { Stack, Typography } from '@mui/material';
-import React, { useMemo } from 'react';
+import React from 'react';
 import InboxPanel from '../InboxPanel';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useSearchParams } from 'next/navigation';

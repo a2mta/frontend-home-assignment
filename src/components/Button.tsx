@@ -1,5 +1,5 @@
 import theme from '@/theme';
-import { Button as MUIButton, styled, SxProps } from '@mui/material';
+import { Button as MUIButton, SxProps } from '@mui/material';
 import { FC } from 'react';
 
 type ButtonVariants = 'green' | 'grey' | 'blue';
@@ -28,7 +28,7 @@ const variants: Record<ButtonVariants, SxProps> = {
 
 type ButtonProps = {
   variant: ButtonVariants;
-  children: JSX.Element | JSX.Element[] | stirng;
+  children: JSX.Element | JSX.Element[] | string;
 };
 
 const Button: FC<ButtonProps> = ({ variant = 'green', children }) => {
@@ -52,5 +52,3 @@ const Button: FC<ButtonProps> = ({ variant = 'green', children }) => {
 };
 
 export default Button;
-
-// export default ColorButton;

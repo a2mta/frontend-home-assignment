@@ -14,14 +14,14 @@ const FilesPanel = () => {
       <Stack direction='row'>
         <Typography
           color='black'
-          sx={{ marginLeft: '6px' }}
+          marginLeft="6px"
           variant='subtitle2'
         >
           Files
         </Typography>
         <Typography
           color='graphite'
-          sx={{ marginLeft: '6px' }}
+          marginLeft="6px"
           variant='subtitle2'
         >
           0
