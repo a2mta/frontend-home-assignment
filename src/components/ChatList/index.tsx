@@ -1,10 +1,14 @@
+'use client';
 import React from 'react';
 import InboxPanel from '../InboxPanel';
-import { Stack, Typography } from '@mui/material';
+import { Box, Fab, Stack, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
-import { contacts } from '@/data/dummyData.json';
 import ChatListItem from './ChatListItem';
+
+//contacts should be properly fetched from dummy api endopint but i didn't had time to implement it
+import { contacts } from '@/data/dummyData.json';
+import CustomIcon from '../CustomIcon';
 
 const ChatList = () => {
   const HeaderComp = (
@@ -22,12 +26,33 @@ const ChatList = () => {
     </Stack>
   );
   return (
-    <InboxPanel header={HeaderComp}>
-      <Stack spacing='2px' marginTop='5px'>
-        {contacts.map((contact) => (
-          <ChatListItem key={contact.id} {...contact} />
-        ))}
-      </Stack>
+    <InboxPanel fullHeight header={HeaderComp}>
+      <Box position='relative' height='100%'>
+        <Stack flex={1} spacing='2px' marginTop='5px'>
+          {contacts.map((contact) => (
+            <ChatListItem key={contact.id} {...contact} />
+          ))}
+        </Stack>
+        <Fab
+          disableRipple
+          aria-label='add'
+          sx={{
+            backgroundColor: 'graphiteDark',
+            position: 'absolute',
+            right: '10px',
+            bottom: '10px',
+            boxShadow: 'none',
+            width: '40px',
+            height: '40px',
+            minHeight: '40px',
+            '&:hover': {
+              backgroundColor: 'graphiteDark',
+            },
+          }}
+        >
+          <CustomIcon icon='plus' stroke='white' />
+        </Fab>
+      </Box>
     </InboxPanel>
   );
 };

@@ -1,14 +1,13 @@
 'use client';
 import React, { FC, useMemo } from 'react';
-import { User } from '../../../types';
-import { Box, Stack, Typography } from '@mui/material';
+import { Contact } from '../../../types';
+import { Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 import SouthWest from '@mui/icons-material/SouthWest';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { conversations } from '@/data/dummyData.json';
 
-const ChatListItem: FC<User> = ({ name, avatar, id }) => {
-  const router = useRouter();
+const ChatListItem: FC<Contact> = ({ name, avatar, id }) => {
   const searchParams = useSearchParams();
   const paramsId = searchParams.get('userId');
   const conversation = useMemo(
@@ -17,7 +16,7 @@ const ChatListItem: FC<User> = ({ name, avatar, id }) => {
   );
 
   const lastMessage = conversation?.messages[conversation.messages.length - 1];
-  console.info(lastMessage);
+
   //There's definitely a need to implement types, so that you can distinguish between message types and avoid this figuring out on which stage chat is
   const messageContent = useMemo(() => {
     if (lastMessage?.senderId === 'system') {
@@ -50,7 +49,13 @@ const ChatListItem: FC<User> = ({ name, avatar, id }) => {
   }, [lastMessage?.content, lastMessage?.senderId]);
 
   const handleClick = () => {
-    router.push(`/?userId=${id}`);
+    //next 13 router is kinda garbage, they trowed away shallow routing
+    
+    
+    // gotta use native api
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('userId', id);
+    window.history.pushState(null, '', `?${params.toString()}`);
   };
   const isActive = paramsId === id;
   return (

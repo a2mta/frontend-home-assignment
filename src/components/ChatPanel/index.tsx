@@ -1,7 +1,7 @@
 'use client';
 import { Box, Stack, Typography } from '@mui/material';
 import { useSearchParams } from 'next/navigation';
-import React, { useMemo } from 'react';
+import React, { Suspense, useMemo } from 'react';
 import InboxPanel from '../InboxPanel';
 import CustomIcon from '../CustomIcon';
 import Check from '@mui/icons-material/Check';
@@ -56,11 +56,13 @@ const ChatPanel = () => {
     </Stack>
   );
   return (
-    <InboxPanel header={HeaderComp}>
-      <Stack sx={{ height: '100%' }} spacing='2px' marginTop='5px'>
-        {userId}
-      </Stack>
-    </InboxPanel>
+    <Suspense>
+      <InboxPanel fullHeight header={HeaderComp}>
+        <Stack sx={{ height: '100%' }} flex="1" spacing='2px' marginTop='5px'>
+          {userId}
+        </Stack>
+      </InboxPanel>
+    </Suspense>
   );
 };
 

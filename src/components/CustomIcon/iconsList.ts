@@ -4,9 +4,20 @@ export type IconList =
   | 'inbox'
   | 'at'
   | 'assigned'
-  | 'target-04'
+  | 'target'
   | 'calls'
+  | 'user'
+  | 'moon'
+  | 'video-recorder'
+  | 'plus'
   | 'hash'
+  | 'smile'
+  | 'key'
+  | 'share'
+  | 'recording'
+  | 'map'
+  | 'check-verified'
+  | 'brief-case'
   | 'chevron-left'
   | 'chevron-right'
   | 'contacts'
@@ -16,25 +27,47 @@ import search from '@/assets/icons/search.svg';
 import inbox from '@/assets/icons/inbox.svg';
 import calls from '@/assets/icons/calls.svg';
 import contacts from '@/assets/icons/contacts.svg';
+import key from '@/assets/icons/key-02.svg';
+import verified from '@/assets/icons/check-verified-02.svg';
 import hash from '@/assets/icons/hash-02.svg';
+import moon from '@/assets/icons/moon-filled.svg';
+import map from '@/assets/icons/map-02.svg';
+import user from '@/assets/icons/user-03.svg';
 import target from '@/assets/icons/target-04.svg';
 import assigned from '@/assets/icons/assigned.svg';
 import chevronL from '@/assets/icons/chevron-left.svg';
+import briefCase from '@/assets/icons/briefcase-01.svg';
+import plus from '@/assets/icons/plus.svg';
 import chevronR from '@/assets/icons/chevron-left.svg';
+import smile from '@/assets/icons/face-smile.svg';
+import share from '@/assets/icons/share-filled.svg';
 import at from '@/assets/icons/at-sign.svg';
+import recording from '@/assets/icons/recording.svg';
+import recorder from '@/assets/icons/video-recorder.svg';
 import stats from '@/assets/icons/stats.svg';
-import { ElementType } from 'react';
+import { SvgIconProps } from '@mui/material';
 
-export const icons: Record<IconList, ElementType> = {
+export const icons: Record<IconList, React.ComponentType<SvgIconProps>> = {
   search,
   inbox,
   hash,
+  smile,
+  recording,
+  moon,
+  share,
   at,
+  map,
+  key,
+  plus,
+  user,
   calls,
+  'video-recorder': recorder,
+  'check-verified': verified,
+  'brief-case': briefCase,
   'chevron-left': chevronL,
   'chevron-right': chevronR,
   assigned,
   contacts,
-  'target-04': target,
+  target: target,
   stats,
 };

@@ -7,7 +7,7 @@ const SideNavigation = () => {
     <Stack flex={1} maxWidth={220} component='nav' padding='18px 8px'>
       <div style={{ height: '35px' }}></div>
       <Stack marginBottom='10px'>
-        <SideNavigationItem icon='inbox' path='/' title='Inbox' />
+        <SideNavigationItem icon='inbox' path='/inbox' title='Inbox' />
         <SideNavigationItem icon='search' title='Search' path='/search' />
         <SideNavigationItem icon='calls' title='Calls' path='/calls' />
         <SideNavigationItem icon='contacts' title='Contacts' path='/contacts' />

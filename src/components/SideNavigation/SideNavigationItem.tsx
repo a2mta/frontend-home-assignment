@@ -5,6 +5,7 @@ import CustomIcon from '../CustomIcon';
 import { IconList } from '../CustomIcon/iconsList';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import theme from '@/theme';
 
 type SideNavigationItemProps = {
   icon: IconList;
@@ -36,7 +37,13 @@ const SideNavigationItem: FC<SideNavigationItemProps> = ({
         alignItems='center'
         {...rest}
       >
-        <CustomIcon icon={icon} />
+        <CustomIcon
+          sx={{
+            stroke: isActive ? 'black' : theme.palette.graphite,
+            fill: 'none',
+          }}
+          icon={icon}
+        />
         <Typography
           color={isActive ? 'black' : 'graphite'}
           variant={isActive ? 'subtitle2' : 'body2'}

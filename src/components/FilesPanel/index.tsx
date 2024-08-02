@@ -1,32 +1,36 @@
+'use client';
+import { Stack, Typography } from '@mui/material';
 import React from 'react';
 import InboxPanel from '../InboxPanel';
-import { Box, Stack, Typography } from '@mui/material';
-import CustomIcon from '../CustomIcon';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useSearchParams } from 'next/navigation';
 
-const ConversationList = () => {
+const FilesPanel = () => {
+  const searchParams = useSearchParams();
+  const userId = searchParams.get('userId');
+  if (!userId) return null;
   const HeaderComp = (
     <Stack direction='row' justifyContent='space-between' color='grey' flex='1'>
       <Stack direction='row'>
-        <Box>
-          <CustomIcon icon='hash' />
-        </Box>
         <Typography
           color='black'
           sx={{ marginLeft: '6px' }}
           variant='subtitle2'
         >
-          All conversaions
+          Files
+        </Typography>
+        <Typography
+          color='graphite'
+          sx={{ marginLeft: '6px' }}
+          variant='subtitle2'
+        >
+          0
         </Typography>
       </Stack>
       <KeyboardArrowDownIcon sx={{ cursor: 'pointer' }} fontSize='small' />
     </Stack>
   );
-  return (
-    <Stack flex={0}>
-      <InboxPanel header={HeaderComp} />
-    </Stack>
-  );
+  return <InboxPanel header={HeaderComp} />;
 };
 
-export default ConversationList;
+export default FilesPanel;
