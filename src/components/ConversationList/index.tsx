@@ -13,7 +13,7 @@ const ConversationList = () => {
         </Box>
         <Typography
           color='black'
-          sx={{ marginLeft: '6px' }}
+          sx={{ ml: '6px' }}
           variant='subtitle2'
         >
           All conversaions

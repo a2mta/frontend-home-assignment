@@ -24,7 +24,7 @@ const ChatPanel = () => {
         <Box>
           <CustomIcon icon='hash' />
         </Box>
-        <Typography color='black' marginLeft='6px' variant='subtitle2'>
+        <Typography color='black' ml='6px' variant='subtitle2'>
           Primary
         </Typography>
       </Stack>

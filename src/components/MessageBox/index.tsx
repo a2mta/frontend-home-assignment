@@ -31,7 +31,7 @@ const MessageBox = () => {
   return (
     <Stack flex='0'>
       <InboxPanel>
-        <Box padding='10px'>
+        <Box p='10px'>
           <TextArea placeholder='Write a message...' />
         </Box>
         <Stack margin='0px 10px' justifyContent='space-between' direction='row'>

@@ -40,7 +40,7 @@ const Button: FC<ButtonProps> = ({ variant = 'green', children }) => {
         textTransform: 'initial',
         borderRadius: '9px',
         color: 'white',
-        padding: '4px 10px',
+        p: '4px 10px',
         ...variantStyles,
       }}
       size='small'

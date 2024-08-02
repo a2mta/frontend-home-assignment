@@ -15,7 +15,7 @@ const InboxPage = () => {
         display: 'flex',
         height: '100%',
         marginTop: '12px',
-        paddingRight: '15px',
+        pr: '15px',
         marginBottom: '40px',
       }}
     >

@@ -81,7 +81,7 @@ const UserInfoPanel = () => {
             <Button variant='blue'>
               <CustomIcon
                 sx={{
-                  marginRight: '4px',
+                  mr: '4px',
                   height: '15px',
                   fill: 'white',
                 }}
@@ -96,7 +96,7 @@ const UserInfoPanel = () => {
             <Button variant='green'>
               <CustomIcon
                 sx={{
-                  marginRight: '4px',
+                  mr: '4px',
                   fill: 'white',
                   stroke: 'white',
                   height: '14px',
@@ -112,7 +112,7 @@ const UserInfoPanel = () => {
             <Button variant='grey'>
               <CustomIcon
                 sx={{
-                  marginRight: '4px',
+                  mr: '4px',
                   height: '18px',
                 }}
                 icon='moon'
@@ -126,7 +126,7 @@ const UserInfoPanel = () => {
             <Button variant='grey'>
               <CustomIcon
                 sx={{
-                  marginRight: '4px',
+                  mr: '4px',
                   height: '18px',
                 }}
                 icon='share'
@@ -187,7 +187,7 @@ const UserInfoPanel = () => {
           </Grid>
           <Stack direction='row' marginTop='10px'>
             <AddIcon fill='black' fontSize='small' />
-            <Typography marginLeft='5px' variant='subtitle2'>
+            <Typography ml='5px' variant='subtitle2'>
               New detail
             </Typography>
           </Stack>

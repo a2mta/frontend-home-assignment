@@ -4,7 +4,7 @@ import { Stack, Typography } from '@mui/material';
 
 const SideNavigation = () => {
   return (
-    <Stack flex={1} maxWidth={220} component='nav' padding='18px 8px'>
+    <Stack flex={1} maxWidth={220} component='nav' p='18px 8px'>
       <div style={{ height: '35px' }}></div>
       <Stack marginBottom='10px'>
         <SideNavigationItem icon='inbox' path='/inbox' title='Inbox' />
@@ -16,7 +16,7 @@ const SideNavigation = () => {
       <Stack>
         <Typography
           style={{ cursor: 'default' }}
-          padding={'7px 14px'}
+          p={'7px 14px'}
           variant='body2'
           color='graphite'
         >
@@ -29,7 +29,7 @@ const SideNavigation = () => {
         <Typography
           color='graphite'
           style={{ cursor: 'default' }}
-          padding={'7px 14px'}
+          p={'7px 14px'}
           variant='body2'
         >
           Direct messages

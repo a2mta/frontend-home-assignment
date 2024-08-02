@@ -22,7 +22,7 @@ const InboxPanel: FC<InboxPanelProps> = ({ header, children, fullHeight }) => {
       {header && (
         <Box
           sx={{
-            padding: '7px 12px',
+            p: '7px 12px',
           }}
           width='100%'
         >
@@ -30,7 +30,7 @@ const InboxPanel: FC<InboxPanelProps> = ({ header, children, fullHeight }) => {
         </Box>
       )}
       {children && (
-        <Box padding='0px 4px 8px 4px' height='100%' width='100%'>
+        <Box p='0px 4px 8px 4px' height='100%' width='100%'>
           {children}
         </Box>
       )}

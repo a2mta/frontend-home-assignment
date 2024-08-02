@@ -63,7 +63,7 @@ const ChatListItem: FC<Contact> = ({ name, avatar, id }) => {
       onClick={handleClick}
       sx={{
         flexDirection: 'row',
-        padding: '11px',
+        p: '11px',
         cursor: 'pointer',
         backgroundColor: isActive ? 'greyBg' : 'inherit',
         borderRadius: '6px',

@@ -18,7 +18,7 @@ const ChatList = () => {
           Open
         </Typography>
         <KeyboardArrowDownIcon
-          sx={{ marginRight: '8px', cursor: 'pointer' }}
+          sx={{ mr: '8px', cursor: 'pointer' }}
           fontSize='small'
         />
       </Stack>
@@ -28,7 +28,7 @@ const ChatList = () => {
   return (
     <InboxPanel fullHeight header={HeaderComp}>
       <Box position='relative' height='100%'>
-        <Stack flex={1} spacing='2px' marginTop='5px'>
+        <Stack flex={1} spacing='2px' >
           {contacts.map((contact) => (
             <ChatListItem key={contact.id} {...contact} />
           ))}
@@ -39,12 +39,12 @@ const ChatList = () => {
           sx={{
             backgroundColor: 'graphiteDark',
             position: 'absolute',
-            right: '10px',
-            bottom: '10px',
+            right: '11px',
+            bottom: '5px',
             boxShadow: 'none',
-            width: '40px',
-            height: '40px',
-            minHeight: '40px',
+            width: '37px',
+            height: '37px',
+            minHeight: '37px',
             '&:hover': {
               backgroundColor: 'graphiteDark',
             },

@@ -14,14 +14,14 @@ const NotesPanel = () => {
       <Stack direction='row'>
         <Typography
           color='black'
-          sx={{ marginLeft: '6px' }}
+          sx={{ ml: '6px' }}
           variant='subtitle2'
         >
           Notes
         </Typography>
         <Typography
           color='graphite'
-          sx={{ marginLeft: '6px' }}
+          sx={{ ml: '6px' }}
           variant='subtitle2'
         >
           2

@@ -28,7 +28,7 @@ const SideNavigationItem: FC<SideNavigationItemProps> = ({
       passHref
     >
       <Stack
-        padding='7px 14px'
+        p='7px 14px'
         borderRadius='10px'
         bgcolor={isActive ? 'greyDark' : 'inherit'}
         style={{ cursor: 'pointer' }}
