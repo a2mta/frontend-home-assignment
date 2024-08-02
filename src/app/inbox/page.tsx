@@ -20,19 +20,19 @@ const InboxPage = () => {
       }}
     >
       <Grid container columnSpacing={1} rowSpacing={1}>
-        <Grid item md={3}>
+        <Grid item md={3} xs={12}>
           <Stack spacing={1} height='100%'>
             <ConversationList />
             <ChatList />
           </Stack>
         </Grid>
-        <Grid item md={5.6}>
+        <Grid item md={5.6} xs={12}>
           <Stack spacing={1} height='100%'>
             <ChatPanel />
             <MessageBox />
           </Stack>
         </Grid>
-        <Grid item md={3.4}>
+        <Grid item md={3.4} xs={12}>
           <Stack spacing={1}>
             <UserInfoPanel />
             <NotesPanel />

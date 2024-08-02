@@ -47,7 +47,7 @@ const ChatPanel = () => {
   return (
     <Suspense>
       <InboxPanel fullHeight header={HeaderComp}>
-        <Stack sx={{ height: '100%' }} flex='1' spacing='2px' marginTop='5px'>
+        <Stack sx={{minHeight: '200px', height: '100%' }} flex='1' spacing='2px' marginTop='5px'>
           {userId}
         </Stack>
       </InboxPanel>
