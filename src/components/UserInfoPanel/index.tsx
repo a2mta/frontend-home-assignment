@@ -76,59 +76,67 @@ const UserInfoPanel = () => {
         >
           {user?.name}
         </Typography>
-        <Stack spacing='5px' sx={{ marginTop: '18px' }} direction='row'>
-          <Button variant='blue'>
-            <CustomIcon
-              sx={{
-                marginRight: '9px',
-                height: '15px',
-                fill: 'white',
-              }}
-              icon='calls'
-            />
-            <Typography variant='subtitle2' fontSize='small'>
-              Audio
-            </Typography>
-          </Button>
-          <Button variant='green'>
-            <CustomIcon
-              sx={{
-                marginRight: '9px',
-                fill: 'white',
-                stroke: 'white',
-                height: '14px',
-              }}
-              icon='video-recorder'
-            />
-            <Typography variant='subtitle2' fontSize='small'>
-              Video
-            </Typography>
-          </Button>
-          <Button variant='grey'>
-            <CustomIcon
-              sx={{
-                marginRight: '9px',
-                height: '18px',
-              }}
-              icon='moon'
-            />
-            <Typography variant='subtitle2' fontSize='small'>
-              Mute
-            </Typography>
-          </Button>
-          <Button variant='grey'>
-            <CustomIcon
-              sx={{
-                marginRight: '9px',
-                height: '18px',
-              }}
-              icon='share'
-            />
-            <Typography variant='subtitle2' fontSize='small'>
-              Share
-            </Typography>
-          </Button>
-        </Stack>
+        <Grid rowGap='5px' columnGap='5px' marginTop='18px' container>
+          <Grid item>
+            <Button variant='blue'>
+              <CustomIcon
+                sx={{
+                  marginRight: '4px',
+                  height: '15px',
+                  fill: 'white',
+                }}
+                icon='calls'
+              />
+              <Typography variant='subtitle2' fontSize='small'>
+                Audio
+              </Typography>
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant='green'>
+              <CustomIcon
+                sx={{
+                  marginRight: '4px',
+                  fill: 'white',
+                  stroke: 'white',
+                  height: '14px',
+                }}
+                icon='video-recorder'
+              />
+              <Typography variant='subtitle2' fontSize='small'>
+                Video
+              </Typography>
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant='grey'>
+              <CustomIcon
+                sx={{
+                  marginRight: '4px',
+                  height: '18px',
+                }}
+                icon='moon'
+              />
+              <Typography variant='subtitle2' fontSize='small'>
+                Mute
+              </Typography>
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant='grey'>
+              <CustomIcon
+                sx={{
+                  marginRight: '4px',
+                  height: '18px',
+                }}
+                icon='share'
+              />
+              <Typography variant='subtitle2' fontSize='small'>
+                Share
+              </Typography>
+            </Button>
+          </Grid>
+        </Grid>
         <Stack marginTop='20px'>
           <Grid container rowSpacing='13px'>
             <ShortDescriptionItem
